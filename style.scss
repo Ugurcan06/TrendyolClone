@@ -1,0 +1,405 @@
+$textcolor:#333333;
+$hovercolor:#f27a1a;
+$textbacround:#f3f3f3;
+img{
+    max-width: 100%;
+}
+
+body{
+
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.inputs{
+    width: 50%;
+    border: 1px solid gray;
+    border-radius: 8px;
+    background-color: $textbacround;
+    
+    &:hover{
+        border: 1px solid $hovercolor;
+    }
+    .form-control{
+        background-color: $textbacround;
+    }
+    @media (max-width: 992px) { 
+        .inputs{
+            width: 90%;
+            background-color: red;
+            margin-left: 0;
+        }
+    }
+   
+ 
+}
+.form-control:focus{
+    box-shadow: none;
+   
+}
+
+.form-control{
+    border: none;
+}
+
+
+
+.collapse{
+    @media (max-width: 992px) { 
+       form{
+        width: auto;
+        display: block;
+        &:focus-visible{
+            border: none;
+        }
+       }
+    }
+}
+
+.navbottom{
+    a{
+        text-decoration: none;
+        color: $textcolor;
+
+        
+        
+        &:hover {
+            color: $hovercolor;
+            
+        }
+
+      
+      
+      
+    }
+    @media (max-width: 992px) { 
+       margin-top: 1rem;
+     }
+
+
+
+   
+}
+
+.dropdown{
+    display: inline-block;
+    &:hover .dropdown-menu {
+        display: block;
+        width: auto;
+        &.center-body{
+            background-color: gray
+        }
+        & hr{
+            display: none;
+        }
+ }
+
+    
+}
+.center-body{
+    height: 100vh;
+   
+}
+
+.sectionmenu {
+
+  .section-headers{
+    .sectionmain{
+        display: flex;
+         justify-content: space-between;
+    h1{
+        display: none;
+    }
+    
+    a{
+            
+            color: $textcolor;
+            font-size: 1.1rem;
+            text-decoration: none;
+         
+      
+        }
+        
+       
+        @media (max-width: 992px) { 
+           display: block ;           
+           width: 100%;
+          
+           text-align: center;
+            
+           
+            
+
+            h1{
+                display: block;
+                background-color: $textbacround;
+                border: 3px solid $hovercolor;
+                border-radius: 20px;
+                padding: 0.5rem;
+                margin-top: 1rem;
+                a{
+                    font-size: 30px;
+                    
+                }
+            }
+           
+
+           
+            
+          
+        }
+
+     
+    }
+  
+  }
+ 
+    
+}
+
+
+//******************MEGA MENU KISIMI W3SCHOLL*********************
+ 
+.dropdown-menu{
+    left: 0%;
+    border: none;
+    
+    
+   
+    padding: 0%;
+}
+
+// .list-group{
+//     a{
+//         &:hover{
+//             color: $hovercolor;
+//         }
+//     }
+// }
+
+
+.dropdown {
+      a{
+        color: $textcolor;
+        &:hover{
+            color: $hovercolor;
+         
+        }
+    }
+}
+
+.mega{
+    display: block;
+   border-radius: 0 0 10px 10px;
+   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    ul{
+        padding: 0 0 0 20px;
+       
+    }
+}
+
+// .nav-link{
+//     &:hover{
+        
+//         color: $hovercolor;
+//     }
+// }
+
+
+
+.nav-item{
+    &:hover  .nav-link {
+
+        color: $hovercolor;
+        border-bottom: 2px solid $hovercolor;
+        
+    }
+  
+}
+
+.navbar{
+    padding: 0%;
+}
+
+.img{
+    border: 1px solid rgb(4, 4, 4);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: transform .2s;
+    &:hover{
+        transform: scale(1.05);
+
+    }
+}
+
+
+// .owl-theme .owl-dots .owl-dot span{
+//     display: none;
+// }
+.owl-carousel{
+  
+    a{
+        text-decoration: none;
+        color: $textcolor;
+        font-weight: 600;
+        img{
+            border: 1px solid $textcolor;
+            border-radius: 50%;
+        }
+        &:hover{
+            color: $hovercolor;
+            transition: 0.5s ease;
+            img{
+                border: 1px solid $hovercolor;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.navs-mega{
+    .navbar-nav {
+        @media (max-width: 992px) { 
+            display: none;
+          } 
+    }
+}
+
+
+.ssssss{
+    height: 800vh;
+}
+
+p{
+    margin: 0%;
+}
+
+.imgs{
+ 
+    a{
+
+        .card{
+            .card-footer{
+                color: white;
+                background-color: black;
+                .shoping{
+                    display: none;
+                }
+               
+            }
+           
+        }
+        &:hover{
+            .card{
+                .card-footer{
+                
+                    background-color: $hovercolor;
+                    transition: 0.5s ease;
+                    img{
+                        transform: scale(1.2);
+                    }
+                    
+                  p{
+                    display: block;
+                   
+                  }
+                }
+            }
+        }
+    }
+}
+
+.reklam{
+    @media (max-width: 992px) { 
+       div{
+        margin-top: 1rem;
+        display: block;
+       }
+      } 
+}
+
+.imgcards{
+    margin-top: 1rem;
+    @media (max-width: 992px) { 
+       .imgs{
+        margin-top: 1rem;
+        display: block;
+       }
+      } 
+}
+
+a{
+    text-decoration: none;
+    color: $textcolor;
+}
+
+.marka{
+    @media (max-width: 992px) { 
+
+       
+            
+        
+   } 
+    a{
+        display: block;
+        @media (max-width: 992px) { 
+            
+            text-align: center;
+            margin-top: 0.5rem;
+       } 
+      
+        &:hover{
+            color: $hovercolor;
+            text-decoration: underline;
+        }
+      
+    }
+}
+footer{
+    background-color: #000;
+}
+.footer{
+    a{
+        display: block;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+.center-slider{
+    background-color: #fffaf6;
+    border: 1px solid #f2e5da;
+    border-radius: 10px;
+    padding: 3rem;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 5%);
+    .owl-theme{
+       
+        .card{
+            img{
+                border: none;
+            }
+        }
+    }
+}
+
+.owl-carousel{
+
+a{
+
+
+
+.items{
+    width: 198px;
+    height: 270px;
+    margin: 1px 15px 1px 1px;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 5%);
+    border: solid 1px #e6e6e6;
+    background-color: #fff;
+    img{
+        border: none;
+    }
+   
+}
+}
+}
